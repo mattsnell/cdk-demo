@@ -25,4 +25,13 @@ CdkDemoStack(app, "CdkDemoStack",
     # For more information, see https://docs.aws.amazon.com/cdk/latest/guide/environments.html
     )
 
+# https://docs.aws.amazon.com/cdk/v2/guide/tagging.html
+# tags = [["SDLC", "Prod"],
+#         ["CostCenter","0123456789"]]
+
+# for tag in tags:
+#     key = tag[0]
+#     value = tag[1]
+#     cdk.Tags.of(app).add(key, value)
+
 app.synth()
